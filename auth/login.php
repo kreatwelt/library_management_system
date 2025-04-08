@@ -6,12 +6,12 @@ $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $role = $_POST['role'];
-    $username = $_POST['username'];  // Corrected variable name
+    $username = $_POST['username']; 
     $password = $_POST['password'];
 
-    // Use 'username' in the SQL query as it matches the column name in your database
+   
     $stmt = $conn->prepare("SELECT * FROM users WHERE username = ? AND role = ?");
-    $stmt->execute([$username, $role]);  // Corrected typo: $userame -> $username
+    $stmt->execute([$username, $role]); 
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($user && password_verify($password, $user['password'])) { // Verify hashed password
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: ../dashboard/" . ($role == 'admin' ? "admin_dashboard.php" : "user_dashboard.php"));
         exit();
     } else {
-        echo "Invalid username, password, or role selection.";  // Adjusted error message
+        echo "Invalid username, password, or role selection."; 
     }
 }
 ?>
