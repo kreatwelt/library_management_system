@@ -2,16 +2,16 @@
 require_once "../config/database.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST["name"]; // Change 'name' to 'username'
+    $username = $_POST["name"]; 
     $password = $_POST["password"];
     $role = $_POST["role"];
 
     $hashed_password = password_hash($password, PASSWORD_DEFAULT); // Hash password
 
-    // Updated SQL query to use 'username' instead of 'name'
+  
     $stmt = $conn->prepare("INSERT INTO users (username, password, role) VALUES (:username, :password, :role)");
     $stmt->execute([
-        "username" => $username, // Using 'username' here
+        "username" => $username, 
         "password" => $hashed_password,
         "role" => $role
     ]);
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container">
         <h2>Register</h2>
         <form method="POST">
-            <input type="text" name="name" placeholder="Full Name" required><br><br> <!-- 'name' is fine here as it's the input field name -->
+            <input type="text" name="name" placeholder="Full Name" required><br><br>
             <input type="password" name="password" placeholder="Password" required><br><br>
             <label for="role">Register as:</label>
             <select name="role" required>
