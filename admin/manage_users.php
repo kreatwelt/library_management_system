@@ -32,7 +32,7 @@ $users = $conn->query("SELECT * FROM users")->fetchAll(PDO::FETCH_ASSOC);
                     <td><?= $user["username"] ?></td>
                     <td><?= $user["role"] ?></td>
                     <td>
-                        <a href="edit_user.php?id=<?= $user['id'] ?>">Edit</a> | 
+                        <a href="edit_user.php?id=<?= $user['id'] ?>">Edit</a> 
                         <a href="delete_users.php?id=<?= $user['id'] ?>" onclick="return confirm('Are you sure?')">Delete</a>
                     </td>
                 </tr>
