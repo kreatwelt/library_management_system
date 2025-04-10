@@ -16,7 +16,7 @@ $users = $conn->query("SELECT * FROM users")->fetchAll(PDO::FETCH_ASSOC);
     <title>Manage Users</title>
     <link rel="stylesheet" href="../static/style.css">
 </head>
-<body class="manage-users"> <!-- Apply the 'manage-users' class here -->
+<body class="manage-users"> 
     <div class="container">
         <h2>Manage Users</h2>
         <table border="1">
