@@ -1,0 +1,134 @@
+
+h1, h2, h3, p, label, button {
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px black; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: white; 
+}
+
+
+.container {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+.login-container {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+
+input[type="text"],
+input[type="password"],
+select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.add-book {
+    background: url("../static/images/add_book_bg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.view-books {
+    background: url("../static/images/view_books_bg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login {
+    background: url("../static/images/favourite_bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.admin-dashboard {
+    background: url("../static/images/school_bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.user-dashboard {
+    background: url("../static/images/school_bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.borrow-book {
+    background: url("../static/images/view_books_bg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.search-book {
+    background: url("../static/images/view_books_bg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.return-book{
+    background: url("../static/images/view_books_bg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.manage-users {
+    background: url("../static/images/dashboard_bg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.edit-user {
+    background: url("../static/images/dashboard_bg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.edit-book {
+    background: url("../static/images/view_books_bg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.register {
+    background: url("../static/images/register_bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
